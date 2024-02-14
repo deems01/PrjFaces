@@ -125,5 +125,17 @@
       <Name>PrjFaces</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnOff.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,6 +1,8 @@
 ﻿Imports PrjFaces
 
 Public Class Form1
+    Private isLightOn As Boolean = False
+    Private isSwitchOn As Boolean = False
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -30,5 +32,17 @@ Public Class Form1
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         UserControl.ClearMood()
+    End Sub
+    Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles switchONOFF.Click
+        isLightOn = Not isLightOn
+        isSwitchOn = Not isSwitchOn
+        If isLightOn Then
+            USwitch.Image = My.Resources.lightOn
+            switchONOFF.Image = My.Resources.btnON
+
+        Else
+            USwitch.Image = My.Resources.lightOff
+            switchONOFF.Image = My.Resources.btnOff
+        End If
     End Sub
 End Class

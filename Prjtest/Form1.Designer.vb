@@ -31,6 +31,10 @@ Partial Class Form1
         Me.UserControl = New PrjFaces.UCtrlEmotion()
         Me.UserControl11 = New PrjFaces.UCtrlEmotion()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.switchONOFF = New System.Windows.Forms.PictureBox()
+        Me.USwitch = New System.Windows.Forms.PictureBox()
+        CType(Me.switchONOFF, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.USwitch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -112,11 +116,32 @@ Partial Class Form1
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'switchONOFF
+        '
+        Me.switchONOFF.Image = Global.Prjtest.My.Resources.Resources.btnOff
+        Me.switchONOFF.Location = New System.Drawing.Point(79, 297)
+        Me.switchONOFF.Name = "switchONOFF"
+        Me.switchONOFF.Size = New System.Drawing.Size(117, 59)
+        Me.switchONOFF.TabIndex = 11
+        Me.switchONOFF.TabStop = False
+        '
+        'USwitch
+        '
+        Me.USwitch.Image = Global.Prjtest.My.Resources.Resources.lightOn
+        Me.USwitch.Location = New System.Drawing.Point(67, 107)
+        Me.USwitch.Name = "USwitch"
+        Me.USwitch.Size = New System.Drawing.Size(163, 184)
+        Me.USwitch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.USwitch.TabIndex = 10
+        Me.USwitch.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.switchONOFF)
+        Me.Controls.Add(Me.USwitch)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.UserControl)
         Me.Controls.Add(Me.btnYell)
@@ -128,6 +153,8 @@ Partial Class Form1
         Me.Controls.Add(Me.UserControl11)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.switchONOFF, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.USwitch, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -141,4 +168,6 @@ Partial Class Form1
     Friend WithEvents btnYell As Button
     Friend WithEvents UserControl As PrjFaces.UCtrlEmotion
     Friend WithEvents btnClear As Button
+    Friend WithEvents USwitch As PictureBox
+    Friend WithEvents switchONOFF As PictureBox
 End Class
