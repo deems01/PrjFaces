@@ -22,10 +22,9 @@ Partial Class USwitch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(USwitch))
         Me.pbSwitch = New System.Windows.Forms.PictureBox()
-        Me.imgSwitch = New System.Windows.Forms.ImageList(Me.components)
+        Me.imgSwitch = New System.Windows.Forms.ImageList()
         CType(Me.pbSwitch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '

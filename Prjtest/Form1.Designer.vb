@@ -29,10 +29,10 @@ Partial Class Form1
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.UserControl = New PrjFaces.UCtrlEmotion()
-        Me.UserControl11 = New PrjFaces.UCtrlEmotion()
         Me.USwitch = New USwitch.USwitch()
         Me.UBulb = New UBulb.UBulb()
+        Me.UserControl = New PrjFaces.UCtrlEmotion()
+        Me.UserControl11 = New PrjFaces.UCtrlEmotion()
         Me.SuspendLayout()
         '
         'btnConfused
@@ -99,6 +99,20 @@ Partial Class Form1
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'USwitch
+        '
+        Me.USwitch.Location = New System.Drawing.Point(53, 277)
+        Me.USwitch.Name = "USwitch"
+        Me.USwitch.Size = New System.Drawing.Size(177, 113)
+        Me.USwitch.TabIndex = 10
+        '
+        'UBulb
+        '
+        Me.UBulb.Location = New System.Drawing.Point(236, 50)
+        Me.UBulb.Name = "UBulb"
+        Me.UBulb.Size = New System.Drawing.Size(211, 324)
+        Me.UBulb.TabIndex = 9
+        '
         'UserControl
         '
         Me.UserControl.Location = New System.Drawing.Point(32, 32)
@@ -113,20 +127,6 @@ Partial Class Form1
         Me.UserControl11.Name = "UserControl11"
         Me.UserControl11.Size = New System.Drawing.Size(32, 32)
         Me.UserControl11.TabIndex = 0
-        '
-        'USwitch
-        '
-        Me.USwitch.Location = New System.Drawing.Point(30, 190)
-        Me.USwitch.Name = "USwitch"
-        Me.USwitch.Size = New System.Drawing.Size(200, 200)
-        Me.USwitch.TabIndex = 10
-        '
-        'UBulb
-        '
-        Me.UBulb.Location = New System.Drawing.Point(236, 50)
-        Me.UBulb.Name = "UBulb"
-        Me.UBulb.Size = New System.Drawing.Size(211, 324)
-        Me.UBulb.TabIndex = 9
         '
         'Form1
         '

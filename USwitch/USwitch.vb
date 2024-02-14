@@ -13,4 +13,8 @@
                 Me.selectedSwitch(0)
         End Select
     End Sub
+
+    Private Sub pbSwitch_Click(sender As Object, e As EventArgs) Handles pbSwitch.Click
+
+    End Sub
 End Class
