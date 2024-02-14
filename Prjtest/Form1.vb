@@ -33,16 +33,16 @@ Public Class Form1
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         UserControl.ClearMood()
     End Sub
-    Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles switchONOFF.Click
+    Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles USwitch.Click
         isLightOn = Not isLightOn
         isSwitchOn = Not isSwitchOn
         If isLightOn Then
-            USwitch.Image = My.Resources.lightOn
-            switchONOFF.Image = My.Resources.btnON
+            UBulb.Image = My.Resources.lightOn
+            USwitch.Image = My.Resources.btnON
 
         Else
-            USwitch.Image = My.Resources.lightOff
-            switchONOFF.Image = My.Resources.btnOff
+            UBulb.Image = My.Resources.lightOff
+            USwitch.Image = My.Resources.btnOff
         End If
     End Sub
 End Class
