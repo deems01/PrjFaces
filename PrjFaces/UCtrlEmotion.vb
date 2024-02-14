@@ -22,8 +22,7 @@
                 Me.selectedMood(0)
         End Select
     End Sub
-    Public Sub ClearMood()
-        ' Dispose the current image and set it to Nothing
+    Public Sub clearMood()
         pbEmotion.Image.Dispose()
         pbEmotion.Image = Nothing
     End Sub

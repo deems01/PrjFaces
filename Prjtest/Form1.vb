@@ -42,7 +42,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        UserControl.ClearMood()
+        UserControl.clearMood()
     End Sub
     Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles USwitch.Click
         isLightOn = Not isLightOn
@@ -51,7 +51,6 @@ Public Class Form1
         If isLightOn Then
             UBulb.Image = My.Resources.lightOn
             USwitch.Image = My.Resources.btnON
-
         Else
             UBulb.Image = My.Resources.lightOff
             USwitch.Image = My.Resources.btnOff
