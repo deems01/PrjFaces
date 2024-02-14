@@ -4,7 +4,18 @@ Public Class Form1
     Private isLightOn As Boolean = False
     Private isSwitchOn As Boolean = False
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        isLightOn = True
+        isSwitchOn = True
+        UpdateImages()
+    End Sub
+    Private Sub UpdateImages()
+        If isLightOn Then
+            UBulb.Image = My.Resources.lightOn
+            USwitch.Image = My.Resources.btnON
+        Else
+            UBulb.Image = My.Resources.lightOff
+            USwitch.Image = My.Resources.btnOff
+        End If
     End Sub
     Private Sub btnConfused_Click(sender As Object, e As EventArgs) Handles btnConfused.Click
         UserControl.setMood("confused")
@@ -36,6 +47,7 @@ Public Class Form1
     Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles USwitch.Click
         isLightOn = Not isLightOn
         isSwitchOn = Not isSwitchOn
+        UpdateImages()
         If isLightOn Then
             UBulb.Image = My.Resources.lightOn
             USwitch.Image = My.Resources.btnON
