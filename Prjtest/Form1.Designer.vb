@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BtnConfused = New System.Windows.Forms.Button()
+        Me.btnConfused = New System.Windows.Forms.Button()
         Me.btnCool = New System.Windows.Forms.Button()
         Me.btnSmile = New System.Windows.Forms.Button()
         Me.btnStar = New System.Windows.Forms.Button()
@@ -30,18 +30,18 @@ Partial Class Form1
         Me.btnYell = New System.Windows.Forms.Button()
         Me.UserControl = New PrjFaces.UCtrlEmotion()
         Me.UserControl11 = New PrjFaces.UCtrlEmotion()
-        Me.BtnPuhasta = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'BtnConfused
+        'btnConfused
         '
-        Me.BtnConfused.BackColor = System.Drawing.SystemColors.Control
-        Me.BtnConfused.Location = New System.Drawing.Point(373, 41)
-        Me.BtnConfused.Name = "BtnConfused"
-        Me.BtnConfused.Size = New System.Drawing.Size(82, 23)
-        Me.BtnConfused.TabIndex = 1
-        Me.BtnConfused.Text = "Confused"
-        Me.BtnConfused.UseVisualStyleBackColor = False
+        Me.btnConfused.BackColor = System.Drawing.SystemColors.Control
+        Me.btnConfused.Location = New System.Drawing.Point(373, 41)
+        Me.btnConfused.Name = "btnConfused"
+        Me.btnConfused.Size = New System.Drawing.Size(82, 23)
+        Me.btnConfused.TabIndex = 1
+        Me.btnConfused.Text = "Confused"
+        Me.btnConfused.UseVisualStyleBackColor = False
         '
         'btnCool
         '
@@ -103,28 +103,28 @@ Partial Class Form1
         Me.UserControl11.Size = New System.Drawing.Size(32, 32)
         Me.UserControl11.TabIndex = 0
         '
-        'BtnPuhasta
+        'btnClear
         '
-        Me.BtnPuhasta.Location = New System.Drawing.Point(373, 314)
-        Me.BtnPuhasta.Name = "BtnPuhasta"
-        Me.BtnPuhasta.Size = New System.Drawing.Size(82, 23)
-        Me.BtnPuhasta.TabIndex = 8
-        Me.BtnPuhasta.Text = "Puhasta"
-        Me.BtnPuhasta.UseVisualStyleBackColor = True
+        Me.btnClear.Location = New System.Drawing.Point(373, 314)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(82, 23)
+        Me.btnClear.TabIndex = 8
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.BtnPuhasta)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.UserControl)
         Me.Controls.Add(Me.btnYell)
         Me.Controls.Add(Me.btnTeeth)
         Me.Controls.Add(Me.btnStar)
         Me.Controls.Add(Me.btnSmile)
         Me.Controls.Add(Me.btnCool)
-        Me.Controls.Add(Me.BtnConfused)
+        Me.Controls.Add(Me.btnConfused)
         Me.Controls.Add(Me.UserControl11)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -133,12 +133,12 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents UserControl11 As PrjFaces.UCtrlEmotion
-    Friend WithEvents BtnConfused As Button
+    Friend WithEvents btnConfused As Button
     Friend WithEvents btnCool As Button
     Friend WithEvents btnSmile As Button
     Friend WithEvents btnStar As Button
     Friend WithEvents btnTeeth As Button
     Friend WithEvents btnYell As Button
     Friend WithEvents UserControl As PrjFaces.UCtrlEmotion
-    Friend WithEvents BtnPuhasta As Button
+    Friend WithEvents btnClear As Button
 End Class

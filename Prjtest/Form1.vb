@@ -4,32 +4,31 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-    Private Sub BtnConfused_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnConfused.Click
+    Private Sub btnConfused_Click(sender As Object, e As EventArgs) Handles btnConfused.Click
         UserControl.setMood("confused")
     End Sub
 
-    Private Sub BtnCool_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCool.Click
+    Private Sub btnCool_Click(sender As Object, e As EventArgs) Handles btnCool.Click
         UserControl.setMood("cool")
     End Sub
 
-    Private Sub BtnSmile_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSmile.Click
+    Private Sub btnSmile_Click(sender As Object, e As EventArgs) Handles btnSmile.Click
         UserControl.setMood("smile")
     End Sub
 
-    Private Sub BtnStar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStar.Click
+    Private Sub btnStar_Click(sender As Object, e As EventArgs) Handles btnStar.Click
         UserControl.setMood("star")
     End Sub
 
-
-    Private Sub BtnTeeth_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTeeth.Click
+    Private Sub btnTeeth_Click(sender As Object, e As EventArgs) Handles btnTeeth.Click
         UserControl.setMood("teeth")
     End Sub
 
-    Private Sub BtnYell_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnYell.Click
+    Private Sub btnYell_Click(sender As Object, e As EventArgs) Handles btnYell.Click
         UserControl.setMood("yell")
     End Sub
-    Private Sub BtnPuhasta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnPuhasta.Click
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         UserControl.ClearMood()
     End Sub
-
 End Class
