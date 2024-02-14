@@ -1,8 +1,8 @@
 ﻿Imports PrjFaces
 
 Public Class Form1
-    Private isLightOn As Boolean = False
-    Private isSwitchOn As Boolean = False
+    Private isLightOn As Boolean = True
+    Private isSwitchOn As Boolean = True
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         isLightOn = True
         isSwitchOn = True
