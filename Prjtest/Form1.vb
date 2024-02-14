@@ -1,20 +1,20 @@
 ﻿Imports PrjFaces
 
 Public Class Form1
-    Private isLightOn As Boolean = True
-    Private isSwitchOn As Boolean = True
+    Private isLightOn As Boolean = False
+    Private isSwitchOn As Boolean = False
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         isLightOn = True
         isSwitchOn = True
-        UpdateImages()
+        updateimages()
     End Sub
-    Private Sub UpdateImages()
+    Private Sub updateimages()
         If isLightOn Then
-            UBulb.Image = My.Resources.lightOn
-            USwitch.Image = My.Resources.btnON
+            UBulb.setBulb("ON")
+            USwitch.setSwitch("ON")
         Else
-            UBulb.Image = My.Resources.lightOff
-            USwitch.Image = My.Resources.btnOff
+            UBulb.setBulb("OFF")
+            USwitch.setSwitch("OFF")
         End If
     End Sub
     Private Sub btnConfused_Click(sender As Object, e As EventArgs) Handles btnConfused.Click
@@ -42,18 +42,37 @@ Public Class Form1
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        UserControl.clearMood()
+        UserControl.setMood("clear")
     End Sub
-    Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles USwitch.Click
+    'Private Sub switchONOFF_Click(sender As Object, e As EventArgs) Handles USwitch.Click
+    '    isLightOn = Not isLightOn
+    '    isSwitchOn = Not isSwitchOn
+    '    UpdateImages()
+    '    If isLightOn Then
+    '        UBulb.Image = My.Resources.lightOn
+    '        USwitch.Image = My.Resources.btnON
+    '    Else
+    '        UBulb.Image = My.Resources.lightOff
+    '        USwitch.Image = My.Resources.btnOff
+    '    End If
+    'End Sub
+    Private Sub USwitch1_Load(sender As Object, e As EventArgs) Handles USwitch.Load
+        USwitch.setSwitch("OFF")
+    End Sub
+
+    Private Sub UBulb_Load(sender As Object, e As EventArgs) Handles UBulb.Load
+        UBulb.setBulb("OFF")
+    End Sub
+    Private Sub USwitch1_Click(sender As Object, e As EventArgs) Handles USwitch.Click
         isLightOn = Not isLightOn
         isSwitchOn = Not isSwitchOn
-        UpdateImages()
+        updateImages()
         If isLightOn Then
-            UBulb.Image = My.Resources.lightOn
-            USwitch.Image = My.Resources.btnON
+            UBulb.setBulb("ON")
+            USwitch.setSwitch("ON")
         Else
-            UBulb.Image = My.Resources.lightOff
-            USwitch.Image = My.Resources.btnOff
+            UBulb.setBulb("OFF")
+            USwitch.setSwitch("OFF")
         End If
     End Sub
 End Class

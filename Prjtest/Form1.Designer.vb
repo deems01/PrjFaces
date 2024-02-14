@@ -28,19 +28,17 @@ Partial Class Form1
         Me.btnStar = New System.Windows.Forms.Button()
         Me.btnTeeth = New System.Windows.Forms.Button()
         Me.btnYell = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.UserControl = New PrjFaces.UCtrlEmotion()
         Me.UserControl11 = New PrjFaces.UCtrlEmotion()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.USwitch = New System.Windows.Forms.PictureBox()
-        Me.UBulb = New System.Windows.Forms.PictureBox()
-        CType(Me.USwitch, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UBulb, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.USwitch = New USwitch.USwitch()
+        Me.UBulb = New UBulb.UBulb()
         Me.SuspendLayout()
         '
         'btnConfused
         '
         Me.btnConfused.BackColor = System.Drawing.SystemColors.Control
-        Me.btnConfused.Location = New System.Drawing.Point(373, 41)
+        Me.btnConfused.Location = New System.Drawing.Point(536, 50)
         Me.btnConfused.Name = "btnConfused"
         Me.btnConfused.Size = New System.Drawing.Size(82, 23)
         Me.btnConfused.TabIndex = 1
@@ -49,7 +47,7 @@ Partial Class Form1
         '
         'btnCool
         '
-        Me.btnCool.Location = New System.Drawing.Point(373, 81)
+        Me.btnCool.Location = New System.Drawing.Point(536, 90)
         Me.btnCool.Name = "btnCool"
         Me.btnCool.Size = New System.Drawing.Size(82, 23)
         Me.btnCool.TabIndex = 2
@@ -58,7 +56,7 @@ Partial Class Form1
         '
         'btnSmile
         '
-        Me.btnSmile.Location = New System.Drawing.Point(373, 124)
+        Me.btnSmile.Location = New System.Drawing.Point(536, 133)
         Me.btnSmile.Name = "btnSmile"
         Me.btnSmile.Size = New System.Drawing.Size(82, 23)
         Me.btnSmile.TabIndex = 3
@@ -67,7 +65,7 @@ Partial Class Form1
         '
         'btnStar
         '
-        Me.btnStar.Location = New System.Drawing.Point(373, 175)
+        Me.btnStar.Location = New System.Drawing.Point(536, 184)
         Me.btnStar.Name = "btnStar"
         Me.btnStar.Size = New System.Drawing.Size(82, 23)
         Me.btnStar.TabIndex = 4
@@ -76,7 +74,7 @@ Partial Class Form1
         '
         'btnTeeth
         '
-        Me.btnTeeth.Location = New System.Drawing.Point(373, 225)
+        Me.btnTeeth.Location = New System.Drawing.Point(536, 234)
         Me.btnTeeth.Name = "btnTeeth"
         Me.btnTeeth.Size = New System.Drawing.Size(82, 23)
         Me.btnTeeth.TabIndex = 5
@@ -85,12 +83,21 @@ Partial Class Form1
         '
         'btnYell
         '
-        Me.btnYell.Location = New System.Drawing.Point(373, 268)
+        Me.btnYell.Location = New System.Drawing.Point(536, 277)
         Me.btnYell.Name = "btnYell"
         Me.btnYell.Size = New System.Drawing.Size(82, 23)
         Me.btnYell.TabIndex = 6
         Me.btnYell.Text = "Yell"
         Me.btnYell.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(536, 323)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(82, 23)
+        Me.btnClear.TabIndex = 8
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'UserControl
         '
@@ -107,33 +114,19 @@ Partial Class Form1
         Me.UserControl11.Size = New System.Drawing.Size(32, 32)
         Me.UserControl11.TabIndex = 0
         '
-        'btnClear
-        '
-        Me.btnClear.Location = New System.Drawing.Point(373, 314)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(82, 23)
-        Me.btnClear.TabIndex = 8
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
         'USwitch
         '
-        Me.USwitch.Image = Global.Prjtest.My.Resources.Resources.btnOff
-        Me.USwitch.Location = New System.Drawing.Point(79, 297)
+        Me.USwitch.Location = New System.Drawing.Point(30, 190)
         Me.USwitch.Name = "USwitch"
-        Me.USwitch.Size = New System.Drawing.Size(117, 59)
-        Me.USwitch.TabIndex = 11
-        Me.USwitch.TabStop = False
+        Me.USwitch.Size = New System.Drawing.Size(200, 200)
+        Me.USwitch.TabIndex = 10
         '
         'UBulb
         '
-        Me.UBulb.Image = Global.Prjtest.My.Resources.Resources.lightOn
-        Me.UBulb.Location = New System.Drawing.Point(67, 107)
+        Me.UBulb.Location = New System.Drawing.Point(236, 50)
         Me.UBulb.Name = "UBulb"
-        Me.UBulb.Size = New System.Drawing.Size(163, 184)
-        Me.UBulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.UBulb.TabIndex = 10
-        Me.UBulb.TabStop = False
+        Me.UBulb.Size = New System.Drawing.Size(211, 324)
+        Me.UBulb.TabIndex = 9
         '
         'Form1
         '
@@ -153,8 +146,6 @@ Partial Class Form1
         Me.Controls.Add(Me.UserControl11)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.USwitch, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UBulb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -168,6 +159,6 @@ Partial Class Form1
     Friend WithEvents btnYell As Button
     Friend WithEvents UserControl As PrjFaces.UCtrlEmotion
     Friend WithEvents btnClear As Button
-    Friend WithEvents UBulb As PictureBox
-    Friend WithEvents USwitch As PictureBox
+    Friend WithEvents UBulb As UBulb.UBulb
+    Friend WithEvents USwitch As USwitch.USwitch
 End Class
