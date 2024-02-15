@@ -1,6 +1,8 @@
 ﻿Public Class USwitch
-    Private Sub selectedSwitch(ByVal intSwitch As Integer)
-        pbSwitch.Image = imgSwitch.Images(intSwitch)
+    Dim state As Integer = 0
+    Public Event switchState(state As Integer)
+    Private Sub selectedSwitch(ByVal intstate As Integer)
+        If Not pbSwitch.Image = imgSwitch.Images(intSwitch) Then
     End Sub
 
     Public Sub setSwitch(ByVal strSwitch As String)

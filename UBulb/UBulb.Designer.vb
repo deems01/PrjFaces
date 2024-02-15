@@ -31,7 +31,7 @@ Partial Class UBulb
         '
         'pbBulb
         '
-        Me.pbBulb.Location = New System.Drawing.Point(59, 48)
+        Me.pbBulb.Location = New System.Drawing.Point(0, 0)
         Me.pbBulb.Name = "pbBulb"
         Me.pbBulb.Size = New System.Drawing.Size(207, 311)
         Me.pbBulb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -51,7 +51,7 @@ Partial Class UBulb
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pbBulb)
         Me.Name = "UBulb"
-        Me.Size = New System.Drawing.Size(800, 450)
+        Me.Size = New System.Drawing.Size(205, 306)
         CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
