@@ -22,10 +22,9 @@ Partial Class UBulb
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UBulb))
         Me.pbBulb = New System.Windows.Forms.PictureBox()
-        Me.imgBulb = New System.Windows.Forms.ImageList(Me.components)
+        Me.imgBulb = New System.Windows.Forms.ImageList()
         CType(Me.pbBulb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
