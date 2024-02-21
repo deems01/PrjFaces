@@ -37,10 +37,10 @@ Public Class Form1
     Private Sub UBulb_Load(sender As Object, e As EventArgs) Handles UBulb.Load
         UBulb.setBulb("OFF")
     End Sub
-    Private Sub USwitch1_switchState(state As Integer) Handles USwitch.switchState
-        If state = 1 Then
+    Private Sub USwitch1_switchState(switch As Integer) Handles USwitch.switchState
+        If switch = 1 Then
             UBulb.setBulb("ON")
-        ElseIf state = 0 Then
+        ElseIf switch = 0 Then
             UBulb.setBulb("OFF")
         End If
     End Sub

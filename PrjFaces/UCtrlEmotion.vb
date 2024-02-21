@@ -7,6 +7,10 @@ Public Class UCtrlEmotion
     End Sub
 
     Public Sub setMood(ByVal strMood As String)
+        If Not IsNothing(pbEmotion.Image) Then
+            pbEmotion.Image.Dispose()
+            pbEmotion.Image = Nothing
+        End If
         Select Case strMood
             Case "confused"
                 Me.selectedMood(0)
